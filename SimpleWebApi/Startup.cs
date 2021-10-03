@@ -28,6 +28,7 @@ namespace SimpleWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IDonarRepository, DonarRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(policy => {
